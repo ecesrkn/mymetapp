@@ -8,39 +8,39 @@
 
 /* Begin PBXBuildFile section */
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		1F67DE23F20948439B6ACBAB /* Baskervville-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A6309D3371D4ED69660E855 /* Baskervville-Italic.ttf */; };
+		28F048D029BC487DAEB9C2B6 /* Baskervville-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D87A83B412447AABD9017A3 /* Baskervville-Medium.ttf */; };
 		2F50B879F336B1B457897AC4 /* libPods-myMetApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C669D7A8E8F81CDC9451645 /* libPods-myMetApp.a */; };
 		3768FE2888E593EB67C996C4 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		9B13EABC319045DA96A2436C /* Baskervville-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F420A849DF40465DBD82FD8D /* Baskervville-Bold.ttf */; };
-		B23CF3E1AC644425953966B8 /* Baskervville-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CE1B913885E410DAC67766E /* Baskervville-BoldItalic.ttf */; };
-		1F67DE23F20948439B6ACBAB /* Baskervville-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A6309D3371D4ED69660E855 /* Baskervville-Italic.ttf */; };
-		28F048D029BC487DAEB9C2B6 /* Baskervville-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D87A83B412447AABD9017A3 /* Baskervville-Medium.ttf */; };
 		9A4864EF9CF9445C98CDA793 /* Baskervville-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FB96A3B440B4A1C842A2811 /* Baskervville-MediumItalic.ttf */; };
-		C340A75AC6FC405BB1C55575 /* Baskervville-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A633D66C8D2742B6923A3FF4 /* Baskervville-Regular.ttf */; };
+		9B13EABC319045DA96A2436C /* Baskervville-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F420A849DF40465DBD82FD8D /* Baskervville-Bold.ttf */; };
 		9CD97DED25AA4B4194E10356 /* Baskervville-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2CCA86F26BB4F1BA168581D /* Baskervville-SemiBold.ttf */; };
 		A63370746FAF478994596742 /* Baskervville-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD00221B842948E2826A91D8 /* Baskervville-SemiBoldItalic.ttf */; };
+		B23CF3E1AC644425953966B8 /* Baskervville-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CE1B913885E410DAC67766E /* Baskervville-BoldItalic.ttf */; };
+		C340A75AC6FC405BB1C55575 /* Baskervville-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A633D66C8D2742B6923A3FF4 /* Baskervville-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D87A83B412447AABD9017A3 /* Baskervville-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Baskervville-Medium.ttf"; path = "../assets/fonts/Baskervville-Medium.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* myMetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myMetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = myMetApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = myMetApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = myMetApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		5CE1B913885E410DAC67766E /* Baskervville-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Baskervville-BoldItalic.ttf"; path = "../assets/fonts/Baskervville-BoldItalic.ttf"; sourceTree = "<group>"; };
 		6C669D7A8E8F81CDC9451645 /* libPods-myMetApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-myMetApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = myMetApp/AppDelegate.swift; sourceTree = "<group>"; };
 		79D48CE05947571C43531FE2 /* Pods-myMetApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myMetApp.release.xcconfig"; path = "Target Support Files/Pods-myMetApp/Pods-myMetApp.release.xcconfig"; sourceTree = "<group>"; };
+		7FB96A3B440B4A1C842A2811 /* Baskervville-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Baskervville-MediumItalic.ttf"; path = "../assets/fonts/Baskervville-MediumItalic.ttf"; sourceTree = "<group>"; };
 		812A8CDBAAC93CD0F2993C88 /* Pods-myMetApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myMetApp.debug.xcconfig"; path = "Target Support Files/Pods-myMetApp/Pods-myMetApp.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = myMetApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9A6309D3371D4ED69660E855 /* Baskervville-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Baskervville-Italic.ttf"; path = "../assets/fonts/Baskervville-Italic.ttf"; sourceTree = "<group>"; };
+		A633D66C8D2742B6923A3FF4 /* Baskervville-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Baskervville-Regular.ttf"; path = "../assets/fonts/Baskervville-Regular.ttf"; sourceTree = "<group>"; };
+		DD00221B842948E2826A91D8 /* Baskervville-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Baskervville-SemiBoldItalic.ttf"; path = "../assets/fonts/Baskervville-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F420A849DF40465DBD82FD8D /* Baskervville-Bold.ttf */ = {isa = PBXFileReference; name = "Baskervville-Bold.ttf"; path = "../assets/fonts/Baskervville-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		5CE1B913885E410DAC67766E /* Baskervville-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Baskervville-BoldItalic.ttf"; path = "../assets/fonts/Baskervville-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		9A6309D3371D4ED69660E855 /* Baskervville-Italic.ttf */ = {isa = PBXFileReference; name = "Baskervville-Italic.ttf"; path = "../assets/fonts/Baskervville-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		0D87A83B412447AABD9017A3 /* Baskervville-Medium.ttf */ = {isa = PBXFileReference; name = "Baskervville-Medium.ttf"; path = "../assets/fonts/Baskervville-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		7FB96A3B440B4A1C842A2811 /* Baskervville-MediumItalic.ttf */ = {isa = PBXFileReference; name = "Baskervville-MediumItalic.ttf"; path = "../assets/fonts/Baskervville-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A633D66C8D2742B6923A3FF4 /* Baskervville-Regular.ttf */ = {isa = PBXFileReference; name = "Baskervville-Regular.ttf"; path = "../assets/fonts/Baskervville-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		F2CCA86F26BB4F1BA168581D /* Baskervville-SemiBold.ttf */ = {isa = PBXFileReference; name = "Baskervville-SemiBold.ttf"; path = "../assets/fonts/Baskervville-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		DD00221B842948E2826A91D8 /* Baskervville-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "Baskervville-SemiBoldItalic.ttf"; path = "../assets/fonts/Baskervville-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F2CCA86F26BB4F1BA168581D /* Baskervville-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Baskervville-SemiBold.ttf"; path = "../assets/fonts/Baskervville-SemiBold.ttf"; sourceTree = "<group>"; };
+		F420A849DF40465DBD82FD8D /* Baskervville-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Baskervville-Bold.ttf"; path = "../assets/fonts/Baskervville-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +74,21 @@
 				6C669D7A8E8F81CDC9451645 /* libPods-myMetApp.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		428D2BC9DF5846A5BB32107E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F420A849DF40465DBD82FD8D /* Baskervville-Bold.ttf */,
+				5CE1B913885E410DAC67766E /* Baskervville-BoldItalic.ttf */,
+				9A6309D3371D4ED69660E855 /* Baskervville-Italic.ttf */,
+				0D87A83B412447AABD9017A3 /* Baskervville-Medium.ttf */,
+				7FB96A3B440B4A1C842A2811 /* Baskervville-MediumItalic.ttf */,
+				A633D66C8D2742B6923A3FF4 /* Baskervville-Regular.ttf */,
+				F2CCA86F26BB4F1BA168581D /* Baskervville-SemiBold.ttf */,
+				DD00221B842948E2826A91D8 /* Baskervville-SemiBoldItalic.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -114,22 +129,6 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
-		};
-		428D2BC9DF5846A5BB32107E /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				F420A849DF40465DBD82FD8D /* Baskervville-Bold.ttf */,
-				5CE1B913885E410DAC67766E /* Baskervville-BoldItalic.ttf */,
-				9A6309D3371D4ED69660E855 /* Baskervville-Italic.ttf */,
-				0D87A83B412447AABD9017A3 /* Baskervville-Medium.ttf */,
-				7FB96A3B440B4A1C842A2811 /* Baskervville-MediumItalic.ttf */,
-				A633D66C8D2742B6923A3FF4 /* Baskervville-Regular.ttf */,
-				F2CCA86F26BB4F1BA168581D /* Baskervville-SemiBold.ttf */,
-				DD00221B842948E2826A91D8 /* Baskervville-SemiBoldItalic.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
@@ -232,9 +231,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-myMetApp/Pods-myMetApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-myMetApp/Pods-myMetApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -249,9 +252,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-myMetApp/Pods-myMetApp-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-myMetApp/Pods-myMetApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -301,6 +308,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27D95V3Q8Q;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = myMetApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
@@ -329,6 +337,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27D95V3Q8Q;
 				INFOPLIST_FILE = myMetApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (

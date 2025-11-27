@@ -1,6 +1,7 @@
 import { createNavigationContainerRef, NavigationContainer } from "@react-navigation/native"
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
 import HomeScreen from "../screens/home";
+import HomeHeader from "../components/headers/home";
 
 export enum Urls {
     Home = 'Home',
@@ -16,7 +17,7 @@ const Navigation = () => {
     return <NavigationContainer ref={navigationRef} >
         <Stack.Navigator initialRouteName={Urls.Home} >
             <Stack.Screen name={Urls.Home} component={HomeScreen} options={{
-            headerShown: false
+            header: () => <HomeHeader />,
         }} />
         </Stack.Navigator>
     </NavigationContainer>

@@ -4,22 +4,20 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 const Layout = (props: {
     children: React.ReactNode,
-    disableScroll?: boolean
+    disableScroll?: boolean,
+    disableInsetsTop?: boolean
 }) => {
-    const insets = useSafeAreaInsets()
-
-  console.log(`asd`)
-
-  console.log(`56`)
-
-    return <ScrollView
-        style={[styles.wrapper, {
-            paddingTop: insets.top,
-            paddingBottom: insets.bottom,
-        }]}
-        contentContainerStyle={styles.content}>
-        {props.children}
-    </ScrollView>
+    const insets = useSafeAreaInsets();
+    return <View style={[styles.wrapper, {
+        paddingTop: props.disableInsetsTop ? 0 : insets.top,
+        paddingBottom: insets.bottom + 25,
+    }]}>
+        <ScrollView
+            scrollEnabled={!props.disableScroll}
+            style={styles.scroll}>
+            {props.children}
+        </ScrollView>
+    </View>
 }
 
 export default Layout;
@@ -29,7 +27,8 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: palette.rose
     },
-    content: {
+    scroll: {
+        flex: 1
 
     }
 })
