@@ -34,7 +34,7 @@
 		<true/>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string/>
 	<key>RCTNewArchEnabled</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
@@ -51,5 +51,16 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Baskervville-Bold.ttf</string>
+		<string>Baskervville-BoldItalic.ttf</string>
+		<string>Baskervville-Italic.ttf</string>
+		<string>Baskervville-Medium.ttf</string>
+		<string>Baskervville-MediumItalic.ttf</string>
+		<string>Baskervville-Regular.ttf</string>
+		<string>Baskervville-SemiBold.ttf</string>
+		<string>Baskervville-SemiBoldItalic.ttf</string>
+	</array>
 </dict>
 </plist>

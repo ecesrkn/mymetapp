@@ -1,0 +1,37 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/Baskervville-Bold.ttf",
+      "sha1": "5aa0a4c2781adb2eafe88e5caa1a33de7173db27"
+    },
+    {
+      "path": "assets/fonts/Baskervville-BoldItalic.ttf",
+      "sha1": "fa0497a57ee775ee52f711527e4c968b8edfb342"
+    },
+    {
+      "path": "assets/fonts/Baskervville-Italic.ttf",
+      "sha1": "1b16b780ac96a19344e4fb634798cb0ca018717b"
+    },
+    {
+      "path": "assets/fonts/Baskervville-Medium.ttf",
+      "sha1": "42f344b079e1938a7aca7d46b7f5be6c063a9fed"
+    },
+    {
+      "path": "assets/fonts/Baskervville-MediumItalic.ttf",
+      "sha1": "2dd4e0b26ddcfa6af8985ed8429476e4e521c892"
+    },
+    {
+      "path": "assets/fonts/Baskervville-Regular.ttf",
+      "sha1": "10541b0acbb70c2dc784db5a8297840f8e9d1943"
+    },
+    {
+      "path": "assets/fonts/Baskervville-SemiBold.ttf",
+      "sha1": "81af029194cdb7dd49996269df8a8384ebe99f9b"
+    },
+    {
+      "path": "assets/fonts/Baskervville-SemiBoldItalic.ttf",
+      "sha1": "c271617ba868f01f0767bd41a96a147eb09af4fb"
+    }
+  ]
+}
