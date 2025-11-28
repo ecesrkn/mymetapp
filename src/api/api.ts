@@ -12,14 +12,24 @@ const get = async (url: string): Promise<{
     useGlobalState.getState().incrementLoadingCount();
 
     const response = await fetch(baseUrl + url, { method: 'get' });
-    const data = JSON.parse(await response.text())
 
     useGlobalState.getState().decrementLoadingCount();
 
-    return {
-        isSuccess: response.status == 200,
-        message: data.message,
-        data: data,
+    if (response.status == 200) {
+        const data = JSON.parse(await response.text());
+        return {
+            isSuccess: response.status == 200,
+            message: data.message,
+            data: data,
+        }
+    }
+    else {
+
+        return {
+            isSuccess: false,
+            message: '',
+            data: undefined,
+        }
     }
 }
 
@@ -59,7 +69,7 @@ export const getMetObjects = async (params: {
 
 export const getDepartments = async () => {
     const response = await get(`departments`);
-    
+
     return {
         ...response,
         data: response.data as GetDepartmentsResponseData
