@@ -71,3 +71,18 @@ export type GetObjectsResponseData = {
   total: number,
   objectIDs: number[]
 }
+
+export type MetSearchParams = {
+  q?: string;                        // Search term
+  isHighlight?: boolean;              // true or false
+  title?: boolean;                    // true or false
+  tags?: boolean;                     // true or false
+  departmentId?: number;              // department ID
+  isOnView?: boolean;                 // true or false
+  artistOrCulture?: boolean;          // true or false
+  medium?: string | string[];         // multiple values joined by "|" if array
+  hasImages?: boolean;                // true or false
+  geoLocation?: string | string[];    // multiple values joined by "|" if array
+  dateBegin?: number;                 // must be used with dateEnd
+  dateEnd?: number;                   // must be used with dateBegin
+};

@@ -4,7 +4,7 @@ import Layout from "../../styles/layout";
 import { FlatList, ListRenderItemInfo, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { rem, setFont } from "../../styles/global-style";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { getMetObject, getMetObjects } from "../../api/api";
+import { getMetObject, getMetObjects, getMetObjectsWithTheIds } from "../../api/api";
 import { palette } from "../../styles/color-palette";
 import { SvgXml } from "react-native-svg";
 import { bookmarkIcon } from "../../../assets/icons";
@@ -25,7 +25,7 @@ const DepartmentScreen = (props: NativeStackScreenProps<RootStackParamList, Urls
     const removeFavoriteDepartment = useGlobalState(state => state.removeFavoriteDepartment);
     const addFavoriteDepartment = useGlobalState(state => state.addFavoriteDepartment);
 
-  
+
     const isLoading = useRef(false);
 
     useEffect(() => {
@@ -43,6 +43,7 @@ const DepartmentScreen = (props: NativeStackScreenProps<RootStackParamList, Urls
         props.navigation.setOptions({
             header: () => <DefaultHeader
                 title={props.route.params.displayName}
+                backgroundColor={palette.softYellow}
                 endComponent={<TouchableOpacity
                     style={styles.bookmarkIconContainer}
                     onPress={() => (isDepartmentFavorite ? removeFavoriteDepartment : addFavoriteDepartment)(props.route.params.departmentId)}
@@ -73,13 +74,12 @@ const DepartmentScreen = (props: NativeStackScreenProps<RootStackParamList, Urls
         try {
 
             if (pagerData && (pagerData.CurrentPage < pagerData.TotalPages)) {
-                const promises = Promise.all(Array.from({ length: PAGE_SIZE },
-                    async (_, i) => {
-                        const response = await getMetObject(pagerData.objectIDs[(pagerData.CurrentPage * PAGE_SIZE) + i].toString());
-                        return response.data;
-                    }))
-                console.log('load page', pagerData.CurrentPage)
-                const response = await promises;
+                const response = await getMetObjectsWithTheIds({
+                    objectIds: pagerData.objectIDs
+                        .slice(pagerData.CurrentPage * PAGE_SIZE, (pagerData.CurrentPage + 1) * PAGE_SIZE)
+                }
+                );
+
                 setObjects(prev => [...prev, ...((response).filter(item => !!item))]);
             }
 
@@ -114,7 +114,7 @@ const DepartmentScreen = (props: NativeStackScreenProps<RootStackParamList, Urls
                 onEndReachedThreshold={0.05}
                 showsVerticalScrollIndicator={false}
                 onEndReached={() => {
-                    if (true || isLoading.current) return;
+                    if ( isLoading.current) return;
 
                     setPagerData(data => {
                         if (data) {

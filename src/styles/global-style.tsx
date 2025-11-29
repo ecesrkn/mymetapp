@@ -40,7 +40,6 @@ export const setFont = (value: TextStyle): TextStyle => {
         if (shouldAddItalic) {
             fontName += 'Italic';
         }
-        console.log(fontName)
         value.fontFamily = fontName;
     }
     if (!value.fontSize) {

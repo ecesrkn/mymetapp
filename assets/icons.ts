@@ -28,3 +28,7 @@ export const heartIcon = (filled: boolean, color: string) => {
 </svg>`
 
 }
+
+export const chevronBack = (color: string) => `<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M30 36L18 24L30 12" stroke="${color}" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>`
