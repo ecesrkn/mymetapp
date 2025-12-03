@@ -38,7 +38,10 @@ const get = async (url: string): Promise<{
 
 export const getDepartments = async () => {
     const response = await get(`departments`);
-
+    if (response.isSuccess) {
+        useGlobalState.getState().setDepartments(response.data.departments);
+    }
+    
     return {
         ...response,
         data: response.data as GetDepartmentsResponseData
@@ -91,7 +94,7 @@ export const searchMetObjects = async (params: MetSearchParams) => {
     console.log('api.ts - searchMetObjects - url:', url, '- params:', params);
     const response = await get(url);
     console.log('response:', response);
-    
+
     return {
         ...response,
         data: response.data as GetObjectsResponseData

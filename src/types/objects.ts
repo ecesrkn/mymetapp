@@ -52,7 +52,7 @@ export type MetObject = {
   metadataDate: string
   repository: string
   objectURL: string
-  tags: any
+  tags: { term: string }[]
   objectWikidata_URL: string
   isTimelineWork: boolean
   GalleryNumber: string

@@ -3,8 +3,8 @@ import { RootStackParamList, Urls } from "../../navigation/navigation";
 import Layout from "../../styles/layout";
 import { FlatList, ListRenderItemInfo, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { rem, setFont } from "../../styles/global-style";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { getMetObject, getMetObjects, getMetObjectsWithTheIds } from "../../api/api";
+import { useEffect, useRef, useState } from "react";
+import { getMetObjects, getMetObjectsWithTheIds } from "../../api/api";
 import { palette } from "../../styles/color-palette";
 import { SvgXml } from "react-native-svg";
 import { bookmarkIcon } from "../../../assets/icons";
@@ -115,14 +115,12 @@ const DepartmentScreen = (props: NativeStackScreenProps<RootStackParamList, Urls
                 showsVerticalScrollIndicator={false}
                 onEndReached={() => {
                     if ( isLoading.current) return;
-
                     setPagerData(data => {
                         if (data) {
                             return {
                                 ...data,
                                 CurrentPage: data.CurrentPage + 1,
                             }
-
                         }
                         else return data;
                     });

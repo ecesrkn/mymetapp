@@ -13,7 +13,7 @@ import Switch from "../../components/switch";
 import { useGlobalState } from "../../contexts/global-state";
 
 const HomeScreen = (props: NativeStackScreenProps<RootStackParamList, Urls.Home>) => {
-    const [departments, setDepartments] = useState<(Department)[]>()
+    const departments = useGlobalState(state => state.departments);
     const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
     const favoriteDepartmentIds = useGlobalState(state => state.favoriteDepartmentIds);
     const addFavoriteDepartment = useGlobalState(state => state.addFavoriteDepartment);
@@ -33,10 +33,7 @@ const HomeScreen = (props: NativeStackScreenProps<RootStackParamList, Urls.Home>
     }, []);
 
     const initializeData = async () => {
-        const response = await getDepartments();
-        if (response.isSuccess) {
-            setDepartments(response.data.departments);
-        }
+        getDepartments();
     }
 
     const renderDepartment = useCallback((renderItem: ListRenderItemInfo<Department>) => {

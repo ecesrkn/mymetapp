@@ -1,5 +1,6 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { create } from "zustand";
+import { Department } from "../types/departments";
 
 const DEPS_KEY = "DepartmentFavorites";
 const OBJS_KEY = "ObjectFavorites";
@@ -8,11 +9,12 @@ type GlobalStateType = {
     loadingCount: number,
     incrementLoadingCount: () => void,
     decrementLoadingCount: () => void,
+    departments: Department[],
+    setDepartments: (value: Department[]) => void,
     favoriteDepartmentIds: number[],
     addFavoriteDepartment: (id: number) => Promise<void>;
     removeFavoriteDepartment: (id: number) => Promise<void>;
     loadFavoriteDepartments: () => Promise<void>;
-
     favoriteObjectIds: number[],
     addFavoriteObject: (id: number) => Promise<void>;
     removeFavoriteObject: (id: number) => Promise<void>;
@@ -23,6 +25,8 @@ export const useGlobalState = create<GlobalStateType>((set, get) => ({
     loadingCount: 0,
     incrementLoadingCount: () => set(state => ({ loadingCount: state.loadingCount + 1 })),
     decrementLoadingCount: () => set(state => ({ loadingCount: state.loadingCount - 1 })),
+    departments: [],
+    setDepartments: (value: Department[]) => set(({ departments: value })),
     favoriteDepartmentIds: [],
     addFavoriteDepartment: async (id: number) => {
         const current = get().favoriteDepartmentIds;
